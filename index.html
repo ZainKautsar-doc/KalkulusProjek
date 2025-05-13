@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deposito Bank Vertex</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.ico" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#">
+          <h1 class="logo">Deposito Berjangka</h1>
+        </a>
+
+        <button
+          class="nav-toggle-btn"
+          aria-label="Toggle Menu"
+          data-nav-toggle-btn
+        >
+          <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+          <ion-icon name="close-outline" class="close-icon"></ion-icon>
+        </button>
+
+        <nav class="navbar container">
+          <ul class="navbar-list">
+            <li>
+              <a href="#about" class="navbar-link" data-nav-link>Pengertian</a>
+            </li>
+
+            <li>
+              <a href="#portfolio" class="navbar-link" data-nav-link>Kalkulator</a
+              >
+            </li>
+
+            <li>
+              <a href="#skills" class="navbar-link" data-nav-link>Grafik</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link>Kontak</a>
+            </li>
+
+            <li>
+              <a href="#Tentang" class="navbar-link" data-nav-link>Tentang</a>
+            </li>
+
+            <li>
+              <a href="#" class="btn btn-primary">Beranda</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="hero" id="home">
+          <div class="container">
+            <div class="hero-banner">
+              <img
+                src="./assets/images/hero-banner.png"
+                width="800"
+                height="864"
+                loading="lazy"
+                alt="Foto bank"
+                class="img-cover"
+              />
+            </div>
+
+            <div class="hero-content">
+              <h2 class="hero-title">
+                <!-- <span>Deposito Berjangka</span> -->
+                <strong>Bank Vertex</strong> Dimulai Dari Deret, Menuju Puncak
+                Keuangan Anda
+              </h2>
+
+              <p class="hero-text">
+                Deposito adalah pilihan terbaik untuk Anda yang mengutamakan
+                kestabilan dan hasil nyata. Mulai dari sekarang, rencanakan masa
+                depan yang lebih baik bersama deposito.
+              </p>
+
+              <div class="btn-group">
+                <a href="#contact" class="btn btn-primary blue">Kirim Pesan</a>
+
+                <a href="#about" class="btn">Apa itu deposito?</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #PENGERTIAN
+      -->
+
+        <section class="section about" id="about">
+          <div class="container">
+            <figure class="about-banner">
+              <img
+                src="./assets/images/about-banner.jpg"
+                width="800"
+                height="652"
+                loading="lazy"
+                alt="Deposito"
+                class="img-cover"
+              />
+
+              <img
+                src="./assets/images/absolute-image.jpg"
+                width="800"
+                height="717"
+                loading="lazy"
+                alt="Bank"
+                class="abs-img"
+              />
+
+            </figure>
+
+            <div class="about-content">
+              <p class="section-subtitle">Penjelasan tentang deposito</p>
+
+              <h2 class="h2 section-title">Deposito Berjangka</h2>
+
+              <p class="section-text">
+                Deposito adalah uang yang disimpan dalam rekening. Deposito
+                biasanya memiliki jangka waktu tertentu yang mana uang di
+                dalamnya tidak boleh ditarik nasabah. Deposito baru bisa
+                dicairkan sesuai dengan tanggal jatuh temponya, biasanya
+                deposito mempunyai jatuh tempo 3, 6, atau 12 bulan.
+              </p>
+
+              <p class="section-text">
+                Suku bunga tabungan adalah imbalan jasa yang diberikan bank atas
+                sejumlah dana yang nasabah simpan di bank. Dapat dikatakan suku
+                bunga tabungan merupakan hadiah yang diberikan pihak bank kepada
+                nasabahnya.
+              </p>
+
+              <a href="#portfolio" class="btn btn-primary blue"
+                >Kalkulator Deposito</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #PORTFOLIO
+      -->
+      <body id="kalkulator">
+        <section class="section portfolio" id="portfolio">
+          <div class="container">
+            <p class="section-subtitle">Kalkulator</p>
+
+            <h2 class="h2 section-title">Simulasi Deposito</h2>
+
+            <p class="deskripsi">
+              Simulasi Kalkulator Deposito adalah alat bantu yang digunakan untuk 
+              memperkirakan jumlah bunga dan total akumulasi dana dari penempatan deposito 
+              berdasarkan nominal dan jangka waktu tertentu.
+            </p>
+
+            </p>
+            <br>
+            <label for="nominal"><b>Nominal Penempatan (Rp)</b></label>
+            <input type="number" id="nominal" placeholder="Contoh: 1000000" />
+
+            <label><b>Durasi Deposito</b></label>
+            <div class="button-group">
+            <button onclick="pilihDurasi(3, this)">3 Bulan (3%)</button>
+            <button onclick="pilihDurasi(6, this)">6 Bulan (5%)</button>
+            <button onclick="pilihDurasi(12, this)">12 Bulan (6%)</button>
+            </div>
+
+            <div class="hasil" id="hasil" style="display: none">
+            <p><strong>Bunga:</strong> <span id="bunga">Rp 0</span></p>
+            <p><strong>Total Akumulasi:</strong> <span id="total">Rp 0</span></p>
+            </div>
+
+    <div class="syarat">
+      Syarat & Ketentuan <br>
+      -Perhitungan diatas belum termasuk pajak bunga. <br>
+      -Suku bunga dapat berubah sewaktu-waktu mengikuti 
+      ketentuan yang berlaku. <br>
+      -Dana pokok dan bunga hanya dapat dicairkan pada akhir masa jatuh tempo. <br>
+      -Penarikan sebelum jatuh tempo dapat dikenakan penalti atau pengurangan bunga. <br>
+      -Simulasi ini merupakan ilustrasi perhitungan Tahapan Berjangka, 
+      perhitungan sebenarnya mengikuti perhitungan di sistem Bank Vertex.
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+
+        <!-- 
+        - #GRAFIK
+      -->
+
+        <section class="section skills" id="skills">
+          <div class="container">
+            <p class="section-subtitle">Grafik</p>
+
+            <h2 class="h2 section-title">Grafik Deposito</h2>
+
+            <p class="section-text">
+              Simulasi grafik deposito adalah alat visual yang menampilkan pertumbuhan saldo deposito 
+              berdasarkan bunga flat. Pengguna dapat memasukkan jumlah awal, suku bunga tetap, dan jangka 
+              waktu untuk melihat proyeksi saldo setiap bulan. Grafik membantu memvisualisasikan total 
+              bunga yang diperoleh dan saldo akhir selama periode tertentu, tanpa perhitungan bunga majemuk.
+            </p>
+            <br>
+            <h1>
+              <div class="tengah">
+              <a href="grafik.html">
+                <button class="pindah">
+                  <span>Simulasi Grafik Deposito</span>
+                  <span></span>
+                </button>
+              </a>
+            </div>
+            </h1>
+          
+        <!-- 
+        - #CONTACT
+      -->
+
+        <section class="section contact" id="contact">
+          <div class="container">
+            <div class="contact-card">
+              <p class="card-subtitle">Hubungi Kami</p>
+
+              <h2 class="h2 section-title">Kirimkan Pesanmu di Sini</h2>
+
+              <div class="wrapper">
+                <form action="" class="contact-form">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name"
+                    required
+                    class="contact-input"
+                  />
+
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                    class="contact-input"
+                  />
+
+                  <textarea
+                    name="message"
+                    placeholder="Message"
+                    required
+                    class="contact-input"
+                  ></textarea>
+
+                  <button type="submit" class="btn-submit">
+                    Kirim Pesan
+                  </button>
+                </form>
+
+                <ul class="contact-list">
+                  <li class="contact-item">
+                    <div class="contact-icon">
+                      <ion-icon name="location"></ion-icon>
+                    </div>
+
+                    <div>
+                      <h3 class="contact-item-title">Alamat</h3>
+
+                      <address class="contact-item-link">
+                        Kampus 2 Unsil – Jl. Mugarsari, Kec. Tamansari, 
+                        Kota Tasik. <br> Tasikmalaya, Jawa Barat 46196. 
+                      </address>
+                    </div>
+                  </li>
+
+                  <li class="contact-item">
+                    <div class="contact-icon">
+                      <ion-icon name="mail"></ion-icon>
+                    </div>
+
+                    <div>
+                      <h3 class="contact-item-title">Email</h3>
+
+                      <a href="mailto:hello@ethan.com" class="contact-item-link"
+                        >tim9@vertex.com</a
+                      >
+                    </div>
+                  </li>
+
+                  <li class="contact-item">
+                    <div class="contact-icon">
+                      <ion-icon name="call"></ion-icon>
+                    </div>
+
+                    <div>
+                      <h3 class="contact-item-title">Phone</h3>
+
+                      <a href="tel:+1234567890" class="contact-item-link"
+                        >+62 81234554321</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #BLOG
+      -->
+
+         <!-- Di bagian <head> -->
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<!-- Sebelum </body> -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<section class="section Tentang" id="Tentang">
+  <div class="container">
+    <p class="section-subtitle">Tentang</p>
+
+    <h2 class="h2 section-title">Anggota Tim 9</h2>
+
+    <p class="section-text">Terima kasih yang sebesar-besarnya kepada seluruh tim atas dedikasi, kerja keras, 
+      dan semangat kolaboratif yang luar biasa. Berkat kontribusi dan komitmen, proyek ini dapat 
+      diselesaikan dengan baik dan tepat waktu. Semoga keberhasilan ini menjadi langkah awal untuk kolaborasi-kolaborasi 
+      hebat berikutnya.
+    </p>
+
+    <br>
+
+    <!-- Swiper container -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="blog-card">
+            <figure class="card-banner">
+              <img
+                src="./assets/images/anggota 1.jpg"
+                width="300"
+                height="300"
+                loading="lazy"
+                alt="Zain Kautsar Ridha"
+                class="img-cover"
+              />
+              <a href="https://www.instagram.com/zainzenn/" target="_blank" class="overlay-icon">
+                <img src="./assets/images/instagram-icon.png" alt="Instagram" class="instagram-icon" />
+              </a>
+            </figure>
+            <h3 class="card-title">Zain Kautsar Ridha</h3>
+            <p class="card-tag">247006111153</p>
+          </div>
+        </div>
+        
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="blog-card">
+            <figure class="card-banner">
+              <img
+                src="./assets/images/anggota 3.jpg"
+                width="300"
+                height="300"
+                loading="lazy"
+                alt="Siti Aisyah"
+                class="img-cover"
+              />
+              <a href="https://www.instagram.com/zainzenn/" target="_blank" class="overlay-icon">
+                <img src="./assets/images/instagram-icon.png" alt="Instagram" class="instagram-icon" />
+              </a>
+            </figure>
+            <h3 class="card-title">Naufal Rifqi Rachman</h3>
+            <p class="card-tag">247006111158</p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="blog-card">
+            <figure class="card-banner">
+              <img
+                src="./assets/images/anggota 2.jpg"
+                width="300"
+                height="300"
+                loading="lazy"
+                alt="Budi Santoso"
+                class="img-cover"
+              />
+              <a href="https://www.instagram.com/rakafaizz/" target="_blank" class="overlay-icon">
+                <img src="./assets/images/instagram-icon.png" alt="Instagram" class="instagram-icon" />
+              </a>
+            </figure>
+            <h3 class="card-title">Raka Faiz Raihan</h3>
+            <p class="card-tag">247006111160</p>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <div class="blog-card">
+            <figure class="card-banner">
+              <img
+                src="./assets/images/anggota 4.jpg"
+                width="300"
+                height="300"
+                loading="lazy"
+                alt="Nina Lestari"
+                class="img-cover"
+              />
+              <a href="https://www.instagram.com/iam.chaedarr/" target="_blank" class="overlay-icon">
+                <img src="./assets/images/instagram-icon.png" alt="Instagram" class="instagram-icon" />
+              </a>
+            </figure>
+            <h3 class="card-title">Muhammad Chaedar</h3>
+            <p class="card-tag">247006111167</p>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="swiper-slide">
+          <div class="blog-card">
+            <figure class="card-banner">
+              <img
+                src="./assets/images/anggota 5.jpg"
+                width="300"
+                height="300"
+                loading="lazy"
+                alt="Rizky Hidayat"
+                class="img-cover"
+              />
+              <a href="https://www.instagram.com/zainzenn/" target="_blank" class="overlay-icon">
+                <img src="./assets/images/instagram-icon.png" alt="Instagram" class="instagram-icon" />
+              </a>
+            </figure>
+            <h3 class="card-title">Azri Zaki Mushodiq</h3>
+            <p class="card-tag">247006111174</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Swiper navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+</script>
+
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2025 <a href="#" class="copyright-link">Bank Vertex</a>. All
+          Rights Reseverd
+        </p>
+
+        <ul class="footer-list">
+          <li>
+           <p>Terms & Condition</p>
+          </li>
+
+          <li>
+            <p>Privacy Policy</p>>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

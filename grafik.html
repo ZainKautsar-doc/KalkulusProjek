@@ -1,0 +1,42 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulasi Grafik Deposito</title>
+    <link rel="stylesheet" href="grafik.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <section class="section skills" id="skills">
+      <div class="Grafik">
+        <p class="section-subtitle">Bank Vertex</p>
+        <h2 class="h2 section-title">Simulasi Grafik Deposito</h2>
+        <p class="section-text">
+          <b>Cara Menggunakan:</b><br />
+          1. Masukkan nominal penempatan (jumlah deposito awal) pada kolom yang
+          tersedia.<br />
+          2. Pilih salah satu jangka waktu deposito: 3 bulan, 6 bulan, atau 12
+          bulan.<br />
+          3. Grafik simulasi akan muncul secara otomatis setelah opsi dipilih,
+          menampilkan proyeksi saldo setiap bulan berdasarkan bunga flat.
+        </p>
+
+        <label for="nominal">Nominal Penempatan (Rp):</label>
+        <input type="number" id="nominal" value="100000000" />
+
+        <div class="btn-grafik">
+          <button onclick="generateChart(3, 0.03, this)">3 Bulan (3%)</button>
+          <button onclick="generateChart(6, 0.05, this)">6 Bulan (5%)</button>
+          <button onclick="generateChart(12, 0.06, this)">12 Bulan (6%)</button>
+        </div>
+
+        <canvas id="depositoChart"></canvas>
+        <div class="loading" id="loading">Memuat...</div>
+      </div>
+    </section>
+
+    <script src="grafik.js" defer></script>
+  </body>
+</html>
