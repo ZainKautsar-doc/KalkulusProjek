@@ -12,8 +12,9 @@ navToggleBtn.addEventListener("click", function () {
   this.classList.toggle("active");
 });
 
+
 /**
- * toggle the navbar when click any navbar link
+ * KALKULATOR
  */
 
 const navbarLinks = document.querySelectorAll("[data-nav-link]");
@@ -35,11 +36,11 @@ let durasiTerpilih = null;
 function pilihDurasi(durasi, button) {
   durasiTerpilih = durasi;
 
-  // Hapus semua class active dulu
+
   const buttons = document.querySelectorAll(".button-group button");
   buttons.forEach((btn) => btn.classList.remove("active"));
 
-  // Tambahkan class active pada button yang dipilih
+
   button.classList.add("active");
 
   hitungSimulasi();
