@@ -1103,7 +1103,8 @@ textarea.contact-input {
 }
 
 .photo img {
-  width: 100%;
+  width: 92%;
+  border-radius: 23px;
   height: auto;
   object-fit: cover;
 }
