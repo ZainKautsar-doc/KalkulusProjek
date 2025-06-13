@@ -3,7 +3,7 @@
    * colors
    */
 
-  --cadet-blue-crayola: hsl(240, 10%, 70%);
+  --cadet-blue-crayola: hsl(0, 0%, 55%);
   --gold-web-golden: hsl(50, 100%, 54%);
   --vivid-sky-blue: hsl(196, 84%, 63%);
   --midnight-blue: hsl(231, 83%, 25%);
@@ -1127,29 +1127,78 @@ textarea.contact-input {
   margin-bottom: 20px;
 }
 
-.social-links a {
-  display: inline-block;
-  margin-right: 12px;
-  margin-top: 10px;
-  text-decoration: none;
-  padding: 10px 16px;
-  border-radius: 8px;
-  color: white;
-  background-color: #0077b5;
-  transition: background-color 0.3s ease;
+/* From Uiverse.io by aadium */ 
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 15px #00000027;
+  padding: 15px 10px;
+  border-radius: 4em;
 }
 
-.social-links a:nth-child(2) {
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px #00000027;
+  transition: 0.3s;
+}
+
+.social-button:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 6px 3px #00000027;
+}
+
+.social-buttons svg {
+  transition: 0.3s;
+  height: 20px;
+}
+
+.github {
   background-color: #333;
 }
 
-.social-links a:nth-child(3) {
-  background-color: #E1306C;
+.github svg {
+  width: 25px;
+  height: 25px;
+  fill: #f2f2f2;
 }
 
-.social-links a:hover {
-  opacity: 0.85;
+.github:hover svg {
+  fill: #333;
 }
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.linkedin svg {
+  fill: #f2f2f2;
+}
+
+.linkedin:hover svg {
+  fill: #0077b5;
+}
+
+.instagram {
+  background-color: #c13584;
+}
+
+.instagram svg {
+  fill: #f2f2f2;
+}
+
+.instagram:hover svg {
+  fill: #c13584;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
