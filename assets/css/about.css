@@ -1,0 +1,247 @@
+.Tentang {
+    padding: 20px 15px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.about-container {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 17px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.photo {
+    width: 100%;
+    background-color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px 20px 20px;
+}
+
+.photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+    padding: 30px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.info h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+.info p {
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: #666;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Social Buttons Styling */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 15px #00000027;
+    padding: 15px 10px;
+    border-radius: 4em;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px #00000027;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-button:hover {
+    background-color: #f2f2f2;
+    box-shadow: 0px 0px 6px 3px #00000027;
+    transform: translateY(-2px);
+}
+
+.social-buttons svg {
+    transition: 0.3s;
+    height: 18px;
+    width: 18px;
+}
+
+/* GitHub Button */
+.github {
+    background-color: #333;
+}
+
+.github svg {
+    fill: #f2f2f2;
+}
+
+.github:hover {
+    background-color: #f2f2f2;
+}
+
+.github:hover svg {
+    fill: #333;
+}
+
+/* LinkedIn Button */
+.linkedin {
+    background-color: #0077b5;
+}
+
+.linkedin svg {
+    fill: #f2f2f2;
+}
+
+.linkedin:hover {
+    background-color: #f2f2f2;
+}
+
+.linkedin:hover svg {
+    fill: #0077b5;
+}
+
+/* Instagram Button */
+.instagram {
+    background-color: #c13584;
+}
+
+.instagram svg {
+    fill: #f2f2f2;
+}
+
+.instagram:hover {
+    background-color: #f2f2f2;
+}
+
+.instagram:hover svg {
+    fill: #c13584;
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) {
+    .Tentang {
+        padding: 40px 20px;
+    }
+    
+    .photo {
+        padding: 40px 30px 30px 30px;
+    }
+    
+    .photo img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .info {
+        padding: 40px 30px 50px 30px;
+    }
+    
+    .info h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .info p {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    
+    .social-button {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .social-buttons svg {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+/* Desktop Styles */
+@media screen and (min-width: 1024px) {
+    .Tentang {
+        padding: 60px 20px;
+    }
+    
+    .about-container {
+        flex-direction: row;
+        max-width: 1000px;
+    }
+
+    .photo {
+        flex: 1;
+        min-width: 300px;
+        padding: 40px;
+    }
+    
+    .photo img {
+        width: 95%;
+        height: auto;
+        max-width: 300px;
+        border-radius: 23px;
+    }
+
+    .info {
+        flex: 2;
+        padding: 40px;
+        text-align: left;
+    }
+    
+    .info h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+    
+    .info p {
+        font-size: 16px;
+        margin-bottom: 25px;
+        text-align: justify;
+    }
+    
+    .social-buttons {
+        justify-content: center;
+    }
+}
+
+/* Large Desktop Styles */
+@media screen and (min-width: 1200px) {
+    .info h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .info p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+}
