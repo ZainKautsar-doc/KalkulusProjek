@@ -1,0 +1,87 @@
+/* style.css */
+body {
+  background-color: hsl(243, 23%, 18%);
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.section {
+  max-width: 700px;
+  margin: auto;
+}
+
+.Grafik {
+  background: #2d354a;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.btn-grafik {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.btn-grafik button {
+  flex: 1;
+  padding: 10px;
+  background-color: #344b8e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-grafik button:hover {
+  background-color: #3e5caa;
+}
+
+.btn-grafik button.active {
+  background-color: #7f8cff;
+}
+
+input[type="number"] {
+  padding: 8px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+#loading {
+  display: none;
+  text-align: center;
+  color: #ccc;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+canvas {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .btn-grafik {
+    flex-direction: column;
+  }
+
+  .btn-grafik button {
+    width: 100%;
+  }
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright,
+.footer-list {
+  margin-inline: 0;
+}
