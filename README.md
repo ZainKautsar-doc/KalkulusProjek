@@ -26,14 +26,5 @@ Proyek ini bertujuan untuk:
 - Memberikan pengalaman praktis dalam pembuatan aplikasi web interaktif.
 - Membantu mahasiswa memahami hubungan antara teori matematika dan praktik finansial.
 
-## 📁 Struktur Folder
-📦KalkulusProjek
-┣ 📁assets
-┃ ┗ 📄(file gambar, ikon, atau style)
-┣ 📄index.html
-┣ 📄style.css
-┣ 📄script.js
-┗ 📄README.md
-
 ## 🖼️ Preview
 ![Tampilan Kalkulator Deposito](assets/images/preview.png)
